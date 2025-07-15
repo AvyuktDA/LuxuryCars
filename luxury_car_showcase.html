@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Luxury Car Showcase</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(270deg, #000428, #004e92);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .car {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .car:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+    }
+
+    .car img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .car h3 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 1.2rem;
+    }
+
+    .car p {
+      margin: 0.2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>🚗 Luxury Car Showcase 🚗</header>
+  <div class="container">
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Z06" alt="Aston Martin Z06">
+      <h3>Aston Martin Z06</h3>
+      <p>Top Speed: 273 km/h</p>
+      <p>Price: $452,322</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+GT" alt="Pagani GT">
+      <h3>Pagani GT</h3>
+      <p>Top Speed: 191 km/h</p>
+      <p>Price: $793,244</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+812+Superfast" alt="Maserati 812 Superfast">
+      <h3>Maserati 812 Superfast</h3>
+      <p>Top Speed: 294 km/h</p>
+      <p>Price: $1,524,400</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Lamborghini+Chiron" alt="Lamborghini Chiron">
+      <h3>Lamborghini Chiron</h3>
+      <p>Top Speed: 327 km/h</p>
+      <p>Price: $1,061,695</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ferrari+812+Superfast" alt="Ferrari 812 Superfast">
+      <h3>Ferrari 812 Superfast</h3>
+      <p>Top Speed: 289 km/h</p>
+      <p>Price: $2,222,655</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+812+Superfast" alt="Audi 812 Superfast">
+      <h3>Audi 812 Superfast</h3>
+      <p>Top Speed: 345 km/h</p>
+      <p>Price: $844,895</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ferrari+Model+S" alt="Ferrari Model S">
+      <h3>Ferrari Model S</h3>
+      <p>Top Speed: 255 km/h</p>
+      <p>Price: $2,437,427</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+F8" alt="Audi F8">
+      <h3>Audi F8</h3>
+      <p>Top Speed: 256 km/h</p>
+      <p>Price: $1,001,247</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Model+S" alt="Aston Martin Model S">
+      <h3>Aston Martin Model S</h3>
+      <p>Top Speed: 228 km/h</p>
+      <p>Price: $941,833</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Lexus+Turbo" alt="Lexus Turbo">
+      <h3>Lexus Turbo</h3>
+      <p>Top Speed: 212 km/h</p>
+      <p>Price: $1,821,285</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Roadster" alt="Rolls-Royce Roadster">
+      <h3>Rolls-Royce Roadster</h3>
+      <p>Top Speed: 216 km/h</p>
+      <p>Price: $2,219,219</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ford+Model+S" alt="Ford Model S">
+      <h3>Ford Model S</h3>
+      <p>Top Speed: 267 km/h</p>
+      <p>Price: $775,606</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+G-Class" alt="Audi G-Class">
+      <h3>Audi G-Class</h3>
+      <p>Top Speed: 272 km/h</p>
+      <p>Price: $2,713,909</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+812+Superfast" alt="Maserati 812 Superfast">
+      <h3>Maserati 812 Superfast</h3>
+      <p>Top Speed: 182 km/h</p>
+      <p>Price: $2,692,202</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Mercedes-Benz+Chiron" alt="Mercedes-Benz Chiron">
+      <h3>Mercedes-Benz Chiron</h3>
+      <p>Top Speed: 194 km/h</p>
+      <p>Price: $2,997,154</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bentley+911" alt="Bentley 911">
+      <h3>Bentley 911</h3>
+      <p>Top Speed: 249 km/h</p>
+      <p>Price: $1,042,892</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+812+Superfast" alt="Audi 812 Superfast">
+      <h3>Audi 812 Superfast</h3>
+      <p>Top Speed: 344 km/h</p>
+      <p>Price: $739,257</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Aventador" alt="Rolls-Royce Aventador">
+      <h3>Rolls-Royce Aventador</h3>
+      <p>Top Speed: 196 km/h</p>
+      <p>Price: $1,810,451</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Dodge+Continental" alt="Dodge Continental">
+      <h3>Dodge Continental</h3>
+      <p>Top Speed: 209 km/h</p>
+      <p>Price: $2,374,607</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Porsche+Vantage" alt="Porsche Vantage">
+      <h3>Porsche Vantage</h3>
+      <p>Top Speed: 187 km/h</p>
+      <p>Price: $2,640,119</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+Continental" alt="Maserati Continental">
+      <h3>Maserati Continental</h3>
+      <p>Top Speed: 215 km/h</p>
+      <p>Price: $173,164</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+R8" alt="Tesla R8">
+      <h3>Tesla R8</h3>
+      <p>Top Speed: 298 km/h</p>
+      <p>Price: $179,213</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Chevrolet+Model+S" alt="Chevrolet Model S">
+      <h3>Chevrolet Model S</h3>
+      <p>Top Speed: 342 km/h</p>
+      <p>Price: $913,169</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Mercedes-Benz+i8" alt="Mercedes-Benz i8">
+      <h3>Mercedes-Benz i8</h3>
+      <p>Top Speed: 289 km/h</p>
+      <p>Price: $1,378,761</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Huracan" alt="Audi Huracan">
+      <h3>Audi Huracan</h3>
+      <p>Top Speed: 283 km/h</p>
+      <p>Price: $205,140</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Model+X" alt="Aston Martin Model X">
+      <h3>Aston Martin Model X</h3>
+      <p>Top Speed: 333 km/h</p>
+      <p>Price: $632,291</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+911" alt="Audi 911">
+      <h3>Audi 911</h3>
+      <p>Top Speed: 328 km/h</p>
+      <p>Price: $1,334,463</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+G-Class" alt="Aston Martin G-Class">
+      <h3>Aston Martin G-Class</h3>
+      <p>Top Speed: 339 km/h</p>
+      <p>Price: $184,847</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=McLaren+Aventador" alt="McLaren Aventador">
+      <h3>McLaren Aventador</h3>
+      <p>Top Speed: 335 km/h</p>
+      <p>Price: $2,276,318</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Porsche+Continental" alt="Porsche Continental">
+      <h3>Porsche Continental</h3>
+      <p>Top Speed: 342 km/h</p>
+      <p>Price: $729,616</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+812+Superfast" alt="Maserati 812 Superfast">
+      <h3>Maserati 812 Superfast</h3>
+      <p>Top Speed: 295 km/h</p>
+      <p>Price: $574,497</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Urus" alt="Aston Martin Urus">
+      <h3>Aston Martin Urus</h3>
+      <p>Top Speed: 209 km/h</p>
+      <p>Price: $234,879</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Mercedes-Benz+R8" alt="Mercedes-Benz R8">
+      <h3>Mercedes-Benz R8</h3>
+      <p>Top Speed: 284 km/h</p>
+      <p>Price: $1,103,414</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Chiron" alt="Audi Chiron">
+      <h3>Audi Chiron</h3>
+      <p>Top Speed: 318 km/h</p>
+      <p>Price: $2,123,472</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bentley+GT" alt="Bentley GT">
+      <h3>Bentley GT</h3>
+      <p>Top Speed: 239 km/h</p>
+      <p>Price: $884,030</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Urus" alt="Rolls-Royce Urus">
+      <h3>Rolls-Royce Urus</h3>
+      <p>Top Speed: 274 km/h</p>
+      <p>Price: $1,496,691</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ferrari+Roadster" alt="Ferrari Roadster">
+      <h3>Ferrari Roadster</h3>
+      <p>Top Speed: 190 km/h</p>
+      <p>Price: $1,545,832</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Speedster" alt="Rolls-Royce Speedster">
+      <h3>Rolls-Royce Speedster</h3>
+      <p>Top Speed: 326 km/h</p>
+      <p>Price: $220,300</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Chevrolet+Continental" alt="Chevrolet Continental">
+      <h3>Chevrolet Continental</h3>
+      <p>Top Speed: 284 km/h</p>
+      <p>Price: $1,402,644</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+812+Superfast" alt="Maserati 812 Superfast">
+      <h3>Maserati 812 Superfast</h3>
+      <p>Top Speed: 209 km/h</p>
+      <p>Price: $686,118</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+i8" alt="Tesla i8">
+      <h3>Tesla i8</h3>
+      <p>Top Speed: 233 km/h</p>
+      <p>Price: $2,971,080</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Koenigsegg+R8" alt="Koenigsegg R8">
+      <h3>Koenigsegg R8</h3>
+      <p>Top Speed: 299 km/h</p>
+      <p>Price: $2,302,950</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+911" alt="Maserati 911">
+      <h3>Maserati 911</h3>
+      <p>Top Speed: 254 km/h</p>
+      <p>Price: $1,816,826</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ferrari+Chiron" alt="Ferrari Chiron">
+      <h3>Ferrari Chiron</h3>
+      <p>Top Speed: 261 km/h</p>
+      <p>Price: $817,131</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Huracan" alt="Audi Huracan">
+      <h3>Audi Huracan</h3>
+      <p>Top Speed: 258 km/h</p>
+      <p>Price: $1,792,766</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Koenigsegg+Vantage" alt="Koenigsegg Vantage">
+      <h3>Koenigsegg Vantage</h3>
+      <p>Top Speed: 280 km/h</p>
+      <p>Price: $2,484,053</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Aventador" alt="Audi Aventador">
+      <h3>Audi Aventador</h3>
+      <p>Top Speed: 280 km/h</p>
+      <p>Price: $2,056,607</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Roadster" alt="Audi Roadster">
+      <h3>Audi Roadster</h3>
+      <p>Top Speed: 197 km/h</p>
+      <p>Price: $1,117,698</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bentley+911" alt="Bentley 911">
+      <h3>Bentley 911</h3>
+      <p>Top Speed: 233 km/h</p>
+      <p>Price: $236,389</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Mercedes-Benz+Z06" alt="Mercedes-Benz Z06">
+      <h3>Mercedes-Benz Z06</h3>
+      <p>Top Speed: 189 km/h</p>
+      <p>Price: $1,731,766</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Porsche+Urus" alt="Porsche Urus">
+      <h3>Porsche Urus</h3>
+      <p>Top Speed: 320 km/h</p>
+      <p>Price: $2,280,611</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bugatti+Huracan" alt="Bugatti Huracan">
+      <h3>Bugatti Huracan</h3>
+      <p>Top Speed: 261 km/h</p>
+      <p>Price: $2,038,176</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Dodge+Speedster" alt="Dodge Speedster">
+      <h3>Dodge Speedster</h3>
+      <p>Top Speed: 197 km/h</p>
+      <p>Price: $986,698</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Lamborghini+Vantage" alt="Lamborghini Vantage">
+      <h3>Lamborghini Vantage</h3>
+      <p>Top Speed: 251 km/h</p>
+      <p>Price: $1,281,199</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Dodge+i8" alt="Dodge i8">
+      <h3>Dodge i8</h3>
+      <p>Top Speed: 311 km/h</p>
+      <p>Price: $2,495,875</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=McLaren+Model+S" alt="McLaren Model S">
+      <h3>McLaren Model S</h3>
+      <p>Top Speed: 350 km/h</p>
+      <p>Price: $2,701,566</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ford+812+Superfast" alt="Ford 812 Superfast">
+      <h3>Ford 812 Superfast</h3>
+      <p>Top Speed: 192 km/h</p>
+      <p>Price: $1,822,344</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+G-Class" alt="Pagani G-Class">
+      <h3>Pagani G-Class</h3>
+      <p>Top Speed: 235 km/h</p>
+      <p>Price: $1,131,297</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bugatti+F8" alt="Bugatti F8">
+      <h3>Bugatti F8</h3>
+      <p>Top Speed: 250 km/h</p>
+      <p>Price: $2,030,766</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Koenigsegg+Model+S" alt="Koenigsegg Model S">
+      <h3>Koenigsegg Model S</h3>
+      <p>Top Speed: 205 km/h</p>
+      <p>Price: $2,803,634</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Urus" alt="Aston Martin Urus">
+      <h3>Aston Martin Urus</h3>
+      <p>Top Speed: 183 km/h</p>
+      <p>Price: $1,800,776</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Model+S" alt="BMW Model S">
+      <h3>BMW Model S</h3>
+      <p>Top Speed: 271 km/h</p>
+      <p>Price: $1,863,534</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Lexus+Z06" alt="Lexus Z06">
+      <h3>Lexus Z06</h3>
+      <p>Top Speed: 267 km/h</p>
+      <p>Price: $1,829,857</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bugatti+Chiron" alt="Bugatti Chiron">
+      <h3>Bugatti Chiron</h3>
+      <p>Top Speed: 295 km/h</p>
+      <p>Price: $1,719,916</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Urus" alt="BMW Urus">
+      <h3>BMW Urus</h3>
+      <p>Top Speed: 272 km/h</p>
+      <p>Price: $2,971,007</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+812+Superfast" alt="Pagani 812 Superfast">
+      <h3>Pagani 812 Superfast</h3>
+      <p>Top Speed: 297 km/h</p>
+      <p>Price: $726,475</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Speedster" alt="Rolls-Royce Speedster">
+      <h3>Rolls-Royce Speedster</h3>
+      <p>Top Speed: 340 km/h</p>
+      <p>Price: $2,401,972</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Continental" alt="Aston Martin Continental">
+      <h3>Aston Martin Continental</h3>
+      <p>Top Speed: 325 km/h</p>
+      <p>Price: $893,716</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Porsche+Urus" alt="Porsche Urus">
+      <h3>Porsche Urus</h3>
+      <p>Top Speed: 198 km/h</p>
+      <p>Price: $2,468,335</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+R8" alt="Pagani R8">
+      <h3>Pagani R8</h3>
+      <p>Top Speed: 265 km/h</p>
+      <p>Price: $2,720,141</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+R8" alt="Aston Martin R8">
+      <h3>Aston Martin R8</h3>
+      <p>Top Speed: 222 km/h</p>
+      <p>Price: $1,618,104</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Model+S" alt="Aston Martin Model S">
+      <h3>Aston Martin Model S</h3>
+      <p>Top Speed: 335 km/h</p>
+      <p>Price: $1,550,729</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Chevrolet+R8" alt="Chevrolet R8">
+      <h3>Chevrolet R8</h3>
+      <p>Top Speed: 344 km/h</p>
+      <p>Price: $2,430,773</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Koenigsegg+Roadster" alt="Koenigsegg Roadster">
+      <h3>Koenigsegg Roadster</h3>
+      <p>Top Speed: 195 km/h</p>
+      <p>Price: $800,208</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+GT" alt="Aston Martin GT">
+      <h3>Aston Martin GT</h3>
+      <p>Top Speed: 192 km/h</p>
+      <p>Price: $1,336,515</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Jaguar+i8" alt="Jaguar i8">
+      <h3>Jaguar i8</h3>
+      <p>Top Speed: 199 km/h</p>
+      <p>Price: $1,761,335</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ford+Roadster" alt="Ford Roadster">
+      <h3>Ford Roadster</h3>
+      <p>Top Speed: 197 km/h</p>
+      <p>Price: $1,693,166</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Lamborghini+Model+X" alt="Lamborghini Model X">
+      <h3>Lamborghini Model X</h3>
+      <p>Top Speed: 318 km/h</p>
+      <p>Price: $501,227</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+Urus" alt="Tesla Urus">
+      <h3>Tesla Urus</h3>
+      <p>Top Speed: 330 km/h</p>
+      <p>Price: $2,187,948</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Phantom" alt="BMW Phantom">
+      <h3>BMW Phantom</h3>
+      <p>Top Speed: 218 km/h</p>
+      <p>Price: $425,262</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+Model+X" alt="Aston Martin Model X">
+      <h3>Aston Martin Model X</h3>
+      <p>Top Speed: 235 km/h</p>
+      <p>Price: $534,097</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Dodge+Phantom" alt="Dodge Phantom">
+      <h3>Dodge Phantom</h3>
+      <p>Top Speed: 198 km/h</p>
+      <p>Price: $1,620,617</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Continental" alt="BMW Continental">
+      <h3>BMW Continental</h3>
+      <p>Top Speed: 346 km/h</p>
+      <p>Price: $1,543,999</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Huracan" alt="BMW Huracan">
+      <h3>BMW Huracan</h3>
+      <p>Top Speed: 182 km/h</p>
+      <p>Price: $271,316</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+911" alt="Tesla 911">
+      <h3>Tesla 911</h3>
+      <p>Top Speed: 323 km/h</p>
+      <p>Price: $2,515,388</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+GT" alt="Pagani GT">
+      <h3>Pagani GT</h3>
+      <p>Top Speed: 285 km/h</p>
+      <p>Price: $2,135,998</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Aston Martin+G-Class" alt="Aston Martin G-Class">
+      <h3>Aston Martin G-Class</h3>
+      <p>Top Speed: 238 km/h</p>
+      <p>Price: $1,407,390</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Ferrari+GT" alt="Ferrari GT">
+      <h3>Ferrari GT</h3>
+      <p>Top Speed: 192 km/h</p>
+      <p>Price: $520,218</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Jaguar+Chiron" alt="Jaguar Chiron">
+      <h3>Jaguar Chiron</h3>
+      <p>Top Speed: 235 km/h</p>
+      <p>Price: $1,379,496</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Pagani+Continental" alt="Pagani Continental">
+      <h3>Pagani Continental</h3>
+      <p>Top Speed: 251 km/h</p>
+      <p>Price: $543,525</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Porsche+Speedster" alt="Porsche Speedster">
+      <h3>Porsche Speedster</h3>
+      <p>Top Speed: 246 km/h</p>
+      <p>Price: $2,547,969</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Maserati+Model+S" alt="Maserati Model S">
+      <h3>Maserati Model S</h3>
+      <p>Top Speed: 308 km/h</p>
+      <p>Price: $2,090,296</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Dodge+812+Superfast" alt="Dodge 812 Superfast">
+      <h3>Dodge 812 Superfast</h3>
+      <p>Top Speed: 189 km/h</p>
+      <p>Price: $1,948,095</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=BMW+Chiron" alt="BMW Chiron">
+      <h3>BMW Chiron</h3>
+      <p>Top Speed: 258 km/h</p>
+      <p>Price: $1,319,548</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+Aventador" alt="Tesla Aventador">
+      <h3>Tesla Aventador</h3>
+      <p>Top Speed: 185 km/h</p>
+      <p>Price: $509,108</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Tesla+Continental" alt="Tesla Continental">
+      <h3>Tesla Continental</h3>
+      <p>Top Speed: 202 km/h</p>
+      <p>Price: $878,088</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Jaguar+911" alt="Jaguar 911">
+      <h3>Jaguar 911</h3>
+      <p>Top Speed: 323 km/h</p>
+      <p>Price: $2,884,815</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Bentley+Speedster" alt="Bentley Speedster">
+      <h3>Bentley Speedster</h3>
+      <p>Top Speed: 200 km/h</p>
+      <p>Price: $515,080</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Rolls-Royce+Urus" alt="Rolls-Royce Urus">
+      <h3>Rolls-Royce Urus</h3>
+      <p>Top Speed: 240 km/h</p>
+      <p>Price: $2,651,776</p>
+    </div>
+    
+    <div class="car">
+      <img src="https://via.placeholder.com/300x200.png?text=Audi+Model+S" alt="Audi Model S">
+      <h3>Audi Model S</h3>
+      <p>Top Speed: 349 km/h</p>
+      <p>Price: $1,721,517</p>
+    </div>
+    
+  </div>
+</body>
+</html>
